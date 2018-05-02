@@ -1,0 +1,14 @@
+{
+  "name": "elec-login",
+  "version": "1.0.0",
+  "description": "homework",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "electronjs"
+  ],
+  "author": "vietpham",
+  "license": "ISC"
+}
