@@ -1,13 +1,22 @@
 let index = {
     init: function() {
-        // Init
-        asticode.loader.init();
-        asticode.modaler.init();
-        asticode.notifier.init();
-        // Wait for astilectron to be ready
-         document.addEventListener('astilectron-ready', function() {
-             // Listen
-             console.log("xxxxxx");
-         })
+      // Init
+      asticode.loader.init();
+      asticode.modaler.init();
+      asticode.notifier.init();
+
+      document.body.innerHTML = `
+      <div class="form box-shadow">
+        <div class="thumbnail"><img src="https://pixinvent.com/modern-admin-clean-bootstrap-4-dashboard-html-template/app-assets/images/logo/logo-dark.png"/></div>
+        <p class="fancy">
+           <span class="message">Login with Modern</span>
+        </p>
+        <form class="login-form">
+          <input type="text" placeholder="username"/>
+          <input type="password" placeholder="password"/>
+          <button>Login</button>
+          <p class="message">Not registered? <a href="#">Create an account</a></p>
+        </form>
+      </div>` + document.body.innerHTML
     }
 };
