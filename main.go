@@ -26,13 +26,14 @@ func main() {
       AppIconDarwinPath: "resources/icon.icns",
       AppIconDefaultPath: "resources/icon.png",
     },
-    Debug: *debug,
-    Homepage: "index.html",
+    Debug:    *debug,
+  	Homepage: "index.html",
     OnWait: func(_ *astilectron.Astilectron, iw *astilectron.Window, _ *astilectron.Menu, _ *astilectron.Tray, _ *astilectron.Menu) error {
 			w = iw
 			return nil
     },
     WindowOptions: &astilectron.WindowOptions{
+      Center:          astilectron.PtrBool(true),
 			Height:          astilectron.PtrInt(600),
 			Width:           astilectron.PtrInt(800),
     },
