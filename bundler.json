@@ -5,7 +5,6 @@
   "icon_path_windows": "resources/icon.ico",
   "output_path": "output",
   "environments": [
-  {"arch": "amd64", "os": "linux"},
-  {"arch": "386", "os": "windows"}
-]
+    {"arch": "386", "os": "windows"}
+  ]
 }
