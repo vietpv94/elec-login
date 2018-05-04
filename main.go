@@ -21,6 +21,8 @@ func main() {
 
   astilog.Debugf("Running app builte at %s", BuiltAt)
   if err:= bootstrap.Run(bootstrap.Options {
+    Asset:    Asset,
+		AssetDir: AssetDir,
     AstilectronOptions: astilectron.Options {
       AppName: AppName,
       AppIconDarwinPath: "resources/icon.icns",
@@ -32,7 +34,9 @@ func main() {
 			w = iw
 			return nil
     },
+    RestoreAssets:  RestoreAssets,
     WindowOptions: &astilectron.WindowOptions{
+      BackgroundColor: astilectron.PtrStr("#ccc"),
       Center:          astilectron.PtrBool(true),
 			Height:          astilectron.PtrInt(600),
 			Width:           astilectron.PtrInt(800),

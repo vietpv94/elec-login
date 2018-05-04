@@ -7,7 +7,7 @@ let index = {
 
       document.body.innerHTML = `
       <div class="form box-shadow">
-        <div class="thumbnail"><img src="https://pixinvent.com/modern-admin-clean-bootstrap-4-dashboard-html-template/app-assets/images/logo/logo-dark.png"/></div>
+        <div class="thumbnail"><img src="static/logo-dark.png"/></div>
         <p class="fancy">
            <span class="message">Login with Modern</span>
         </p>
