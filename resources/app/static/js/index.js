@@ -27,9 +27,7 @@ let index = {
       document.getElementById("btnLogin").addEventListener("click", function() {
         var username = document.getElementById("username").value;
         var password = document.getElementById("password").value;
-        asticode.loader.show();
         connection.query('SELECT * FROM users WHERE name = ?',[username], function (error, results, fields) {
-          asticode.loader.hide();
           if (error) {
             let c = document.createElement("div");
             c.innerHTML = `Login unsuccessful.`;
@@ -56,8 +54,6 @@ let index = {
             }
           }
         });
-
-        connection.end();
       });
     }
 };
