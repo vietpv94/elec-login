@@ -1,3 +1,5 @@
 output
 bind_linux_amd64.go
 vendor_astilectron_bundler/
+resources/node_modules
+resources/package-lock.json

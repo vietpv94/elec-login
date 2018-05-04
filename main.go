@@ -2,6 +2,7 @@ package main
 
 import (
   "flag"
+  "time"
   "github.com/asticode/go-astilectron"
 	"github.com/asticode/go-astilectron-bootstrap"
 	"github.com/asticode/go-astilog"
@@ -32,6 +33,10 @@ func main() {
   	Homepage: "index.html",
     OnWait: func(_ *astilectron.Astilectron, iw *astilectron.Window, _ *astilectron.Menu, _ *astilectron.Tray, _ *astilectron.Menu) error {
 			w = iw
+      go func() {
+				time.Sleep(5 * time.Second)
+	
+			}()
 			return nil
     },
     RestoreAssets:  RestoreAssets,
